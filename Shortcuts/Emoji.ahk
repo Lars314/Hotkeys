@@ -10,6 +10,9 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 	}
 return
 
+#!s::
+Send ¯\_(ツ)_/¯
+return
 
 ; :whatever: ◔_◔
 :B0:`:whatever::
