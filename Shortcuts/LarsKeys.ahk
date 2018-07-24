@@ -38,9 +38,11 @@ return
 
 !b::	; beta
 SendInput, {U+03B2} ; β
+return
 
 !g::	; gamma
 SendInput, {U+03B3}	; γ
+return
 
 !d::	; delta
 SendInput, {U+03B4} ; δ
