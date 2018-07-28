@@ -13,6 +13,10 @@ return
 SendInput, {(}{U+256F}{U+00B0}{U+25A1}{U+00B0}{)}{U+256F}{U+FE35} {U+253B}{U+2501}{U+253B}	; (╯°□°)╯︵ ┻━┻
 return
 
+!3::
+SendInput, {U+0F3C} {U+3064}{U+25D5}{U+005F}{U+25D5} {U+0F3D}{U+3064}	; ༼ つ ◕_ ◕ ༽つ
+return
+
 :B0:`:hexagon::
   	If (A_EndChar == ":") {
     		SendInput, {BS 9}{U+2B21} ; ⬡
