@@ -5,12 +5,6 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 ; Memes and emoji
 
-:B0:`:s::
-	if (A_EndChar == ":") {
-		SendInput, {BS 3}{U+00AF}\_({U+30C4})_/{U+00AF} ; ¯\_(ツ)_/¯ 
-	}
-return
-
 !1::
 SendInput, {U+00AF}\_({U+30C4})_/{U+00AF} ; ¯\_(ツ)_/¯
 return
@@ -30,6 +24,7 @@ return
 ; puts the computer to sleep
 :B0:`:sleeppc::
 	if (A_EndChar == ":") {
+		SendInput, {BS 9}
 		DllCall("PowrProf\SetSuspendState", "int", 0, "int", 0, "int", 0)
 	}
 return
