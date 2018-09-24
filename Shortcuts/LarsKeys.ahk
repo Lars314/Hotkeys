@@ -88,3 +88,7 @@ return
 !4::	; euro
 SendInput, {U+20AC} ; €
 return
+
+!5:: 	; degrees
+SendInput, {U+00B0}	; °
+return
