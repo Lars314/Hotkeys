@@ -1,4 +1,4 @@
-﻿#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
+#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
 ; #Warn  ; Enable warnings to assist with detecting common errors.
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
@@ -17,21 +17,11 @@ return
 SendInput, {U+0F3C} {U+3064}{U+25D5}{U+005F}{U+25D5} {U+0F3D}{U+3064}	; ༼ つ ◕_ ◕ ༽つ
 return
 
-:B0:`:hexagon::
-  	If (A_EndChar == ":") {
-    		SendInput, {BS 9}{U+2B21} ; ⬡
-	}
-return
+
 
 ; Utilities
 
-; puts the computer to sleep
-:B0:`:sleeppc::
-	if (A_EndChar == ":") {
-		SendInput, {BS 9}
-		DllCall("PowrProf\SetSuspendState", "int", 0, "int", 0, "int", 0)
-	}
-return
+
 
 ; Symbols and special characters
 
@@ -93,10 +83,3 @@ return
 SendInput, {U+00B0}	; °
 return
 
-!/:: 
-SendInput, {U+203D}	; ‽
-return
-
-+!t::
-SendInput, {U+1F422} ; 🐢
-return
